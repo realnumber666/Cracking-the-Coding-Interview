@@ -6,8 +6,9 @@ public class Different {
     }
     public static boolean checkDifferent(String iniString) {
         // write code here
-        if (iniString.length() > 256) return false;
-        boolean[] char_set = new boolean[256];
+        // 用一个boolean数组，第i位为true表示这个元素已经出现过
+        if (iniString.length() > 65536) return false;
+        boolean[] char_set = new boolean[65536];
         for (int i = 0; i < iniString.length(); i++) {
             int val = iniString.charAt(i);
             if (char_set[val] == true) {
