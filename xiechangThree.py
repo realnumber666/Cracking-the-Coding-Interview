@@ -14,6 +14,7 @@ print(arr)
 tol_str = '1'*len(arr[0])
 print(len(arr))
 flag = 0
+# TODO: 次数更新到全局变量的数组！！
 for k in range(1, len(arr)):
     t = k-1
     while(t>=0 and flag == 0):
