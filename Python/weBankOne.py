@@ -1,5 +1,8 @@
 import sys
 
+## 这天，阳阳和他的小伙伴们一起玩游戏！
+
+## 他们总共有n个人，排成一圈，然后从第一个人开始依次报数，1，2，3，....,报到m的人退出游戏，然后从下一个人开始重新从1报数，重复这个过程，直到只剩下一个人时，此人就是游戏的获胜者
 class Node:
     def __init__(self,cargo = None, next = None):
         self.cargo = cargo
