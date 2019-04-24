@@ -10,9 +10,13 @@ import re
 '''
 1. 从左开始遍历字符，第一个是0则抛弃，读到小数点则break
 2. 如果出现了非数字或长度为一，且字符为0，则返回0
+---
+考虑负数!!!
 '''
 
 def  string2int(str):
+    if (str[0] == '-'):
+        return -string2int(str[1:])
     flag = 0
     if (len(str) == 0):
         return 0
